@@ -28,8 +28,12 @@ int main()
   rc_set_motor_free_spin(2);
   printf("Motors are now ready \n");
   //turn on terminal to get a single character input
+<<<<<<< HEAD
   system("stty raw");
 
+=======
+  system("sttyraw");
+>>>>>>> 6a06d273c1b920f08f6e0c071cf752f7fdee96f8
   do {
     printf("> ");
     input = getchar();
@@ -37,7 +41,10 @@ int main()
       case 'w': //go forward
       rc_set_motor(1,0.5);
       rc_set_motor(2,0.5);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6a06d273c1b920f08f6e0c071cf752f7fdee96f8
       break;
       case 'd': //turn right
       rc_set_motor(1,0.5);
