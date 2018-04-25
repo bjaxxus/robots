@@ -29,6 +29,7 @@ int main()
   printf("Motors are now ready \n");
   //turn on terminal to get a single character input
   system("stty raw");
+
   do {
     printf("> ");
     input = getchar();
@@ -36,6 +37,7 @@ int main()
       case 'w': //go forward
       rc_set_motor(1,0.5);
       rc_set_motor(2,0.5);
+
       break;
       case 'd': //turn right
       rc_set_motor(1,0.5);
