@@ -6,7 +6,6 @@
 #include <roboticscape.h>
 #include <stdio.h>
 
-
 //global variables:
 uint8_t lowbyte;
 uint8_t highbyte;
